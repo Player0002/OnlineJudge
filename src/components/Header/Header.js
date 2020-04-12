@@ -18,8 +18,8 @@ const Header = (props)=>{
         <div className="Header-HeaderTop">
             <img src={logo} className="topLogo" alt="logo"/>
             <ul className="sideLeft">
-                <li><a href="/">메인페이지</a></li>
-                <li><a href="/problems">문제목록</a></li>
+                <li><a href="/OnlineJudge/">메인페이지</a></li>
+                <li><a href="/OnlineJudge/problems">문제목록</a></li>
                 {cookies.load('userdata') != null && cookies.load('userdata').rank === 1 ? <li><a href="/admin">관리자페이지</a></li> : <li></li>} 
             </ul>
             {props.hasToken ? 

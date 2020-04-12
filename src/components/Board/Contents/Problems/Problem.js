@@ -32,7 +32,7 @@ const Problem = (props)=>{
                     <header>
                         <h1>{obj.id}. {obj.name}</h1>
                         <p>제한시간 : 2초</p>
-                        {currentPost.currentPost.isCompleted ? <p>이미 완료했습니다!</p>: <a href={"/sendPost/" + obj.id}>제출하기</a>}
+                        {currentPost.currentPost.isCompleted ? <p>이미 완료했습니다!</p>: <a href={"/OnlineJudge/sendPost/" + obj.id}>제출하기</a>}
                     </header>
                     <div className="card">
                         <div className='header'>

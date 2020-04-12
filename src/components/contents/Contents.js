@@ -8,12 +8,12 @@ import SendPost from '../Board/Contents/SendPost/SendPost'
 const Contents = (props)=>{
     return (
         <div>
-            <Route hasToken={props.hasToken} exact path="/" component={Home}/>
-            <Route hasToken={props.hasToken}  exact path="/#" component={Home}/>
-            <Route hasToken={props.hasToken}  path="/problems/:id" component={Problems}/>
-            <Route hasToken={props.hasToken}  path="/boards/:id" component={Board}/>
-            <Route path="/problem/:id" component={Problem}/>
-            <Route path="/sendPost/:id" component={SendPost}/>
+            <Route hasToken={props.hasToken} exact path="/OnlineJudge/" component={Home}/>
+            <Route hasToken={props.hasToken}  exact path="/OnlineJudge/#" component={Home}/>
+            <Route hasToken={props.hasToken}  path="/OnlineJudge/problems/:id" component={Problems}/>
+            <Route hasToken={props.hasToken}  path="/OnlineJudge/boards/:id" component={Board}/>
+            <Route path="/OnlineJudge/problem/:id" component={Problem}/>
+            <Route path="/OnlineJudge/sendPost/:id" component={SendPost}/>
         </div>
     )
 }

@@ -41,7 +41,7 @@ const Board = (props)=>{
                         type === 'problems'?
                             posts.posts.length > 0 ? posts.posts.map((p) => (
                                 <li key={p.id}>
-                                    <a href={"/problem/" + p.id} className="lft">{p.name}</a>
+                                    <a href={"/OnlineJudge/problem/" + p.id} className="lft">{p.name}</a>
                                 </li>
                             
                                 
@@ -54,7 +54,7 @@ const Board = (props)=>{
                         :
                             posts.posts.length > 0 ? posts.posts.map((p) => (
                                 <li key={p.id}>
-                                    <a href={"/boards/" + p.id} className="lft">{p.title}</a>
+                                    <a href={"/OnlineJudge/boards/" + p.id} className="lft">{p.title}</a>
                                 </li>
                             
                                 
