@@ -1,0 +1,37 @@
+.Board{
+    background-color: white;
+    margin: 0px 50px 0px 50px;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 20px;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 300px;
+    h1{
+        padding: 20px 10px 5px 10px;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: left;
+        margin: 20px 30px 5px 30px;
+        border: 0;
+        border-bottom: 1px solid gray;
+    }
+    ul{
+        list-style-type: none;
+        text-align: left;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0px 10px 5px 35px;
+        li{
+            padding: 6px 10px 6px 10px;
+            margin: 20px 30px 5px 0;
+            border: 0;
+            border-bottom: 1px solid gray;
+            a{
+                text-decoration: none;
+                color: gray;
+                margin: 0;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+}

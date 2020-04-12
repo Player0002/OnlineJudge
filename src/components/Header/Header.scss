@@ -1,0 +1,30 @@
+.Header-HeaderTop{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    zoom: 1;
+    box-shadow: 0px 1px 5px 1px gray;
+    .topLogo{
+        float: left;
+        height: 50px;
+    }
+    li{
+        display: inline;
+        padding: 0px 10px 0px 10px;
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+    }
+    .sideLeft{
+        float:left;
+        padding-left: 20px;
+        list-style-type: none;
+    }
+    .sideRight{
+        float: right;
+        padding: 0px;
+        list-style-type: none;
+    }
+}

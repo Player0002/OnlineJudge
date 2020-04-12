@@ -1,0 +1,21 @@
+@import '../../../utils/mixins';
+
+.code{
+    textarea{
+        margin: 40px 0;
+        resize: none;
+    }
+    @include mobile{
+        textarea{
+            width: 300px;
+        }
+    }@include tablet{
+        textarea{
+            width: 600px;
+        }
+    }@include desktop{
+        textarea{
+            width: 800px;
+        }
+    }
+}
