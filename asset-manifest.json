@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/OnlineJudge/static/css/main.9a0549bc.chunk.css",
+    "main.js": "/OnlineJudge/static/js/main.d6116c90.chunk.js",
+    "main.js.map": "/OnlineJudge/static/js/main.d6116c90.chunk.js.map",
+    "runtime-main.js": "/OnlineJudge/static/js/runtime-main.c8310d1e.js",
+    "runtime-main.js.map": "/OnlineJudge/static/js/runtime-main.c8310d1e.js.map",
+    "static/js/2.ab9f4c99.chunk.js": "/OnlineJudge/static/js/2.ab9f4c99.chunk.js",
+    "static/js/2.ab9f4c99.chunk.js.map": "/OnlineJudge/static/js/2.ab9f4c99.chunk.js.map",
+    "index.html": "/OnlineJudge/index.html",
+    "precache-manifest.8701f467071057a93d5802e2dc90b493.js": "/OnlineJudge/precache-manifest.8701f467071057a93d5802e2dc90b493.js",
+    "service-worker.js": "/OnlineJudge/service-worker.js",
+    "static/css/main.9a0549bc.chunk.css.map": "/OnlineJudge/static/css/main.9a0549bc.chunk.css.map",
+    "static/js/2.ab9f4c99.chunk.js.LICENSE.txt": "/OnlineJudge/static/js/2.ab9f4c99.chunk.js.LICENSE.txt",
+    "static/media/danny_logo.png": "/OnlineJudge/static/media/danny_logo.97d4289a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8310d1e.js",
+    "static/js/2.ab9f4c99.chunk.js",
+    "static/css/main.9a0549bc.chunk.css",
+    "static/js/main.d6116c90.chunk.js"
+  ]
+}
