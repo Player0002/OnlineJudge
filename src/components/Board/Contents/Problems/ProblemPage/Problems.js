@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Http from '../../../../../api'
 import './Problems.scss'
 import Board from '../../../Board'
@@ -19,8 +19,8 @@ const Problems = (props)=>{
 
 
     return(
-        <div>
-            <Board className="inner_card" width={800} title="문제목록들" type="problems" page={1} limit={20}/>
+        <div className="boards">
+            <Board className="problem_board" width={800} title="문제목록들" type="problems" page={1} limit={20}/>
         </div>
     )
 }

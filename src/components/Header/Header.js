@@ -12,15 +12,18 @@ const Header = (props)=>{
     let removeCookie = ()=>{
         cookies.remove('userdata')
         props.updateToken(false, null)
+        
+        window.location.reload()
     }
 
     return (
         <div className="Header-HeaderTop">
             <img src={logo} className="topLogo" alt="logo"/>
             <ul className="sideLeft">
-                <li><a href="/OnlineJudge/">메인페이지</a></li>
-                <li><a href="/OnlineJudge/problems">문제목록</a></li>
+                <li><a href="/">메인페이지</a></li>
+                <li><a href="/problems/0">문제목록</a></li>
                 {cookies.load('userdata') != null && cookies.load('userdata').rank === 1 ? <li><a href="/admin">관리자페이지</a></li> : <li></li>} 
+                {cookies.load('userdata') != null && cookies.load('userdata').rank === 1 ? <li><a href="/alluserinfo">모든유저정보</a></li> : <li></li>} 
             </ul>
             {props.hasToken ? 
                 <ul className="sideRight">

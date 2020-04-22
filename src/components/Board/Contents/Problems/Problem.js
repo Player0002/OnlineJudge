@@ -32,7 +32,7 @@ const Problem = (props)=>{
                     <header>
                         <h1>{obj.id}. {obj.name}</h1>
                         <p>제한시간 : 2초</p>
-                        {currentPost.currentPost.isCompleted ? <p>이미 완료했습니다!</p>: <a href={"/OnlineJudge/sendPost/" + obj.id}>제출하기</a>}
+                        {currentPost.currentPost.isCompleted ? <p>이미 완료했습니다!</p>: <a href={"/sendPost/" + obj.id}>제출하기</a>}
                     </header>
                     <div className="card">
                         <div className='header'>
@@ -46,16 +46,14 @@ const Problem = (props)=>{
                         <div className='header'>
                             입력값
                         </div>
-                        <div className='inside'>
-                            {obj.input}
+                        <div className='inside'  dangerouslySetInnerHTML={{__html : obj.input}}>
                         </div>
                     </div>
                     <div className="card">
                         <div className='header'>
                             출력값
                         </div>
-                        <div className='inside'>
-                            {obj.output}
+                        <div className='inside'  dangerouslySetInnerHTML={{__html : obj.output}}>
                         </div>
                     </div>
                     <div className="card">

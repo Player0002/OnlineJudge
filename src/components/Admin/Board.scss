@@ -1,0 +1,24 @@
+.editBoard{
+    margin: 0;
+    .title{
+        width: 91%;
+        border: none;
+        border-bottom: 1px solid #ababab;
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .title:focus{
+        outline: none;
+    }
+    .savebtn{
+        margin: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 20px 40px;
+    }
+}

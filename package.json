@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "0.19.2",
     "crypto-js": "4.0.0",
+    "jodit-react": "1.0.42",
     "node-sass": "4.13.1",
     "primejs": "0.1.1",
     "prismjs": "1.20.0",
@@ -26,12 +27,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	"deploy": "npm run build &&gh-pages -d build"
+    "deploy": "npm run build &&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://Player0002.github.io/OnlineJudge",
   "browserslist": {
     "production": [
       ">0.2%",

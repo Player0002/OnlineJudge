@@ -1,0 +1,26 @@
+.userList{
+    margin: 0;
+    padding: 0;
+
+    p{
+        margin: 0;
+    }
+    .selector{
+        margin-left: 20px;
+        zoom: 1;
+        text-align: center;
+        overflow: hidden;
+        .idx{
+            display: block;
+            float: left;
+            margin: auto;
+            height: 40px;
+
+        }
+        .userName{
+            clear: both;
+            height: 40px;
+            display: block;
+        }
+    }
+}

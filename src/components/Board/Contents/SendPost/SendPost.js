@@ -9,6 +9,9 @@ const SendPost = (props) => {
     let [info, setInfo] = useState({
         value: '제출하지 않음'
     })
+    let [completed, setCompleted] = useState({
+        value: false
+    })
     let submit = ()=>{
         console.log(txt.value)
         
@@ -21,7 +24,10 @@ const SendPost = (props) => {
             setInfo({value: '컴파일중...'})
             Http.requestGet(false, 'http://danny-server.kro.kr:5000/compiler/' + cookies.load('userdata').username +'/' + props.match.params.id).then(rw=>{
                 console.log(rw)
-                if(rw.data.score === rw.data.max) alert('완벽합니다!')
+                if(rw.data.score === rw.data.max) {
+                    alert('완벽합니다!')
+                    setCompleted({value:true})
+                }
                 setInfo({value: rw.data.score + " / " + rw.data.max})
             })
         })
@@ -29,7 +35,7 @@ const SendPost = (props) => {
     return (
         <div className="code">
             <textarea rows="20" cols="100" onChange={event=>setTxt({value:event.target.value})}/><br/>
-            <button onClick={submit}>제출하기</button>
+            {completed.value ?  null : <button onClick={submit}>제출하기</button>}
             <p>{info.value}</p>
         </div>
     )

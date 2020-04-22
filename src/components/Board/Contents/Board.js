@@ -30,7 +30,7 @@ const Board = (props)=>{
             <h1>
                 {title}
             </h1>
-            <a href={"/OnlineJudge/userinfo/:" + writer}>{writer}</a>
+            <a href={"/userinfo/:" + writer}>{writer}</a>
             <p className="when">{when}</p>
             <div className="contents">
                 <div className="inside" dangerouslySetInnerHTML={{__html : contents}}>
