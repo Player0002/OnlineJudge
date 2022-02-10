@@ -9,7 +9,7 @@
     "axios": "0.19.2",
     "crypto-js": "4.0.0",
     "jodit-react": "1.0.42",
-    "node-sass": "4.13.1",
+    "node-sass": "7.0.0",
     "primejs": "0.1.1",
     "prismjs": "1.20.0",
     "react": "^16.13.1",
